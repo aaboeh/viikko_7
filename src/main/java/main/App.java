@@ -60,7 +60,7 @@ public class App
                         break;
                     case 6:
                         gifu.listCourses();
-                        System.out.println("Minkä kurssin haluat arvostella? Syötä kurssin numero: ");
+                        System.out.println("Minkä kurssin haluat arvostella? Syötä kurssin numero:");
                         courseChoice = Integer.parseInt(sc.nextLine());
                         chosenCourse = gifu.getCourses().get(courseChoice);
                         ArrayList<Enrollment> courseEnrollments = gifu.getEnrollments(chosenCourse);
